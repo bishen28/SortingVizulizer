@@ -23,18 +23,15 @@ function swap(el1, el2) {
     if(a>=b){
       el1.style.height = transform2;
       el2.style.height = transform1;
-			window.requestAnimationFrame(function() {
-				setTimeout(() => {
-					resolve();
-				}, 1000);
-			});
+      window.requestAnimationFrame(function() {setTimeout(() => {
+	      resolve();}, 1000);});
     }else{
-			window.requestAnimationFrame(function() {
-				setTimeout(() => {
-					resolve();
-				}, 10);
-			});
-		}
+       window.requestAnimationFrame(function() {
+	 setTimeout(() => {
+	  resolve();
+	}, 10);
+	});
+	}
 	});
 }
 
